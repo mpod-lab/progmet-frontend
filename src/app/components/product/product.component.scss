@@ -29,7 +29,7 @@ th{
 }
 .container {
   @include container;
- position: absolute;
+ position: relative;
   
 }
 .container-size{
