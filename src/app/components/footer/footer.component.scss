@@ -1,0 +1,36 @@
+.footer_main{
+     background: rgba(241, 90, 90, 0.751);
+    height: 30vh;
+    padding-right: 5rem;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    i{
+        color: #3b5998;
+        &:hover{
+            color: #254079;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+.footer_main{
+     padding: 0 .5rem;
+      height: 60vh;
+      justify-content: center;
+      text-align: center;
+      h1{
+          font-size: 1.5rem;
+          align-self: center;
+      }
+      h3{
+          font-size: 1rem;
+            align-self: center;
+      }
+      h4{
+          font-size: .8rem;
+      }
+}
+}

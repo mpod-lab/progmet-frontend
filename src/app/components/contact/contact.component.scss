@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    label{
+        min-width: fit-content;
+    }
+    h1{
+      width: 60vw;
+      align-self: center;
+      text-align: center;
+  }
+  .jumbotron{
+      margin: 0 2rem;
+      max-width: 70vw;
+      min-width: 50vw;
+      align-self: center;
+  }
+  .btn_container{
+      display: flex;
+      justify-content: center
+  }
+}
+.form-control-plaintext, textarea{
+    border: solid black;
+    border-width: 2px;
+}
+@media (max-width: 991px) {
+.container{
+    display: flex;
+    flex-direction: column;
+    h1{
+        width: 100vw;
+        font-size: 3rem;
+        margin-top: 30vh;
+        order: -1
+    }
+    .jumbotron{
+         min-width: 100vw;
+        margin:0 .5rem;
+    }
+}
+}

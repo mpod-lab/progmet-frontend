@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="">Progmet</div>
+  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Więcej</a> -->
+
+  <svg id="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      d="M0,160L48,149.3C96,139,192,117,288,101.3C384,85,480,75,576,85.3C672,96,768,128,864,149.3C960,171,1056,181,1152,160C1248,139,1344,85,1392,58.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+</div>
+<div class="main" id="about">
+  <h1 class="display-3">O firmie</h1>
+  <div class="jumbotron">
+    <p class="lead">Kilka słów o firmie Progmet</p>
+    <hr class="my-4">
+    <p>Zajmujemy się kompleksowym zagospodarowaniem przestrzeni biurowej, warsztatów, magazynów, szkół, pomieszczeń
+      socjalnych
+      itd. Nowoczesne maszyny, technologie malowania, doskonałej klasy akcesoria meblowe stosowane przy produkcji,
+      pozwalają
+      nam na zaoferowanie Państwu mebli funkcjonalnych, estetycznych, trwałych, łatwych w montażu, o bardzo wysokiej
+      jakości.
+      Działamy na rynku od ponad dziesięciu lat i nasze doświadczenie jest w ogromnym stopniu Państwa udziałem. Jesteśmy
+      otwarci na wszelkie sugestie i przez cały czas poszukujemy rozwiązań, które mogłyby spełnić Państwa potrzeby.
+      Polecamy
+      nasze usługi i zapraszamy do współpracy.</p>
+
+  </div>
+</div>
+<div class="categories_container">
+  <div class="categories">
+    <app-product-category></app-product-category>
+    <app-product-category></app-product-category>
+    <app-product-category></app-product-category>
+    <app-product-category></app-product-category>
+    <app-product-category></app-product-category>
+  </div>
+</div>
+<!-- <div class="main">
+  <app-product></app-product>
+</div> -->
+<div id="contact">
+  <app-contact></app-contact>
+</div>
+<div class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10211.915247136692!2d18.8336954!3d50.2176164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d7e828a59dec743!2sProgmet!5e0!3m2!1spl!2spl!4v1577620583087!5m2!1spl!2spl"
+    width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" class="backBtn"><i class="fas fa-arrow-up"></i></button>
+
+<app-footer></app-footer>
