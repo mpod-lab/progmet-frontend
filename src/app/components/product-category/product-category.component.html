@@ -1,8 +1,10 @@
-<div class="card text-white bg-primary mb-3 " style="max-width: 20rem;">
-  <div class="card-body ">
-    <h4 class="card-title first">Title</h4>
-    <a class="sec" routerLink="productCategoryView">
-      <h4 class="card-title ">Więcej</h4>
-    </a>
+<div class="container">
+  <div class="card text-white bg-primary mb-3 " *ngFor="let item of categories" style="max-width: 20rem;">
+    <div class="card-body ">
+      <h5 class="card-title first">{{item.category}}</h5>
+      <a class="sec" routerLink="productCategoryView">
+        <h4 class="card-title ">Więcej</h4>
+      </a>
+    </div>
   </div>
 </div>

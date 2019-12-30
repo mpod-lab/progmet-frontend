@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductCategoryViewComponent } from './product-category-view/product-category-view.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { ConditionComponent } from './components/condition/condition.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ConditionComponent } from './components/condition/condition.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

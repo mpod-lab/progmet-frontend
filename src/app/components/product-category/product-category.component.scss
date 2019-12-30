@@ -38,3 +38,8 @@ $transition: cubic-bezier(.17,.67,.5,1.03);
   
   }
 }
+.container{
+   display: flex;
+    position: relative;
+    justify-content: center;
+}
