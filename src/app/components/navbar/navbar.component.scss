@@ -14,12 +14,17 @@
   padding: 0;
  }
 }
-@media (max-width: 991px) {
+@media (min-width:571px) and (max-width: 991px) {
 .navbar-collapse{
     background-color: #f8f9fa !important;
     z-index: 1;
     height: 120vw;
 }
+}
+@media (max-width:570px) {
+   .container__header{
+        display: none;
+    }
 }
 .menu-item {
   position: relative;

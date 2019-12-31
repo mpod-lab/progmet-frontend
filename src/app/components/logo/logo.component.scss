@@ -1,4 +1,12 @@
 svg {  
-      height: 50vh;
-    width: 50vw
+    height: 65vh;
+    width: 65vw;
+    
+}
+@media (max-width: 991px) {
+    svg {  
+    height: 45vh;
+    width: 45vw;
+    margin-bottom: -55px
+}
 }
