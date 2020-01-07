@@ -41,5 +41,6 @@ $transition: cubic-bezier(.17,.67,.5,1.03);
 .container{
    display: flex;
     position: relative;
+    flex-wrap: wrap;
     justify-content: center;
 }

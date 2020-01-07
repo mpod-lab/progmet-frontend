@@ -5,6 +5,7 @@ import { map, catchError } from "rxjs/operators";
 import { furnitureParams } from '../models/furnitureParams';
 import { categoryParams } from '../models/categoryParams';
 import { HttpHeaders } from '@angular/common/http';
+import { DescriptionParams } from '../models/descriptionParams';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -72,4 +73,11 @@ export class ApiService {
     return this.http.get<categoryParams[]>(this.apiBase + '/categories', this.getHttpOptions({}));
   }
 
+  getTitleAndDesc(): Observable<DescriptionParams> {
+    return this.http.get<DescriptionParams>(this.apiBase = '/description', this.getHttpOptions({}))
+  }
+
+  postTitleAndDesc(item: any): Observable<DescriptionParams> {
+    return this.http.put<DescriptionParams>(this.apiBase = '/description', item, this.getHttpOptions({}))
+  }
 }
